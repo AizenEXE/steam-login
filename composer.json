@@ -1,38 +1,16 @@
 {
-    "name": "kanalumaddela/steam-login",
-    "description": "Steam Auth PHP library",
-    "keywords": ["steam", "auth"],
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Samuel Maddela",
-            "email": "github@maddela.org",
-            "homepage": "https://www.maddela.org",
-            "role": "Developer"
-        }
-    ],
-    "autoload": {
-        "psr-4": {
-            "kanalumaddela\\SteamLogin\\": "src/"
-        }
-    },
-    "require": {
-        "php": "^8.1 || ^7.4",
-        "ext-curl": "*",
-        "ext-json": "*",
-        "ext-libxml": "*",
-        "ext-simplexml": "*"
-    },
-    "require-dev": {
-        "pestphp/pest": "^1.22"
-    },
-    "config": {
-        "allow-plugins": {
-            "pestphp/pest-plugin": true
-        }
-    },
-    "suggest": {
-        "kanalumaddela/laravel-steam-login": "Steam Auth for Laravel applications",
-        "xpaw/steamid": "SteamID library to handle proper steamid validation"
+  "name": "kanalumaddela/steam-login",
+  "description": "Steam Login wrapper for PHP",
+  "type": "library",
+  "license": "MIT",
+  "require": {
+    "php": ">=7.4",
+    "ext-curl": "*",
+    "ext-json": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "kanalumaddela\\SteamLogin\\": "src/"
     }
+  }
 }
