@@ -94,7 +94,8 @@ class SteamLogin
      *
      * @var string|null
      */
-    protected string|null $apiKey = null;
+    /** @var string|null */
+    protected $apiKey = null;
 
     /**
      * Response from either Steam API / XML profile data.
@@ -117,7 +118,9 @@ class SteamLogin
      *
      * @var string
      */
-    protected string|null $loginUrl = null;
+    /** @var string|null */
+    protected $loginUrl = null;
+
 
     /**
      * URL to redirect to after logging in.
@@ -856,7 +859,11 @@ class SteamLogin
         exit();
     }
 
-    protected static function curl(string $url, array $options = []): bool|string
+    /**
+ * @return bool|string
+ */
+    protected static function curl(string $url, array $options = [])
+
     {
         $curl = \curl_init($url);
 
